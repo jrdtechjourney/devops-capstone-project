@@ -1,7 +1,7 @@
 # Local OS metadata
 .DS_Store
 Thumbs.db
-
+*.code-workspace
 # Nose
 .noseids
 
