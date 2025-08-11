@@ -3,7 +3,7 @@ git-notes.txt
 branch.sh
 .DS_Store
 Thumbs.db
-*.code-workspace
+#*.code-workspace
 # Nose
 .noseids
 
