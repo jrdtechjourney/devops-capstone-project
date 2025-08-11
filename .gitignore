@@ -1,4 +1,5 @@
 # Local OS metadata
+git-notes.txt
 .DS_Store
 Thumbs.db
 *.code-workspace
