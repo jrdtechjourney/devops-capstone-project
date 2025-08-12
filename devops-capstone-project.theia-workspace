@@ -2,6 +2,9 @@
   "folders": [
     {
       "path": "file:///home/project/devops-capstone-project"
+    },
+    {
+      "path": "file:///home/project/"
     }
   ],
   "settings": {
