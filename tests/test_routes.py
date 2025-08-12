@@ -190,4 +190,9 @@ class TestAccountService(TestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
 
+    def test_delete_account_not_found(self):
+        """Delete: It should return error status when no account could be found"""
+        invalid_account_id = 0
+        response = self.client.delete(f"{BASE_URL}/{invalid_account_id}")
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
