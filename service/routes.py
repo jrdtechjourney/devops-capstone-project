@@ -11,6 +11,7 @@ from . import app  # Import Flask application
 
 HEADER_CONTENT_TYPE = "application/json"
 
+
 ############################################################
 # Health Endpoint
 ############################################################
@@ -57,6 +58,7 @@ def create_accounts():
     return make_response(
         jsonify(message), status.HTTP_201_CREATED, {"Location": location_url}
     )
+
 
 ######################################################################
 # LIST ALL ACCOUNTS
@@ -128,6 +130,7 @@ def update_account(account_id: int):
 
     return jsonify(message), response_status
 
+
 ######################################################################
 # DELETE AN ACCOUNT
 ######################################################################
@@ -151,13 +154,9 @@ def delete_account(account_id: int):
     return message, response_status
 
 
-
-
 ######################################################################
 #  U T I L I T Y   F U N C T I O N S
 ######################################################################
-
-
 def check_content_type(media_type):
     """Checks that the media type is correct"""
     content_type = request.headers.get("Content-Type")
