@@ -162,7 +162,7 @@ class TestAccountService(TestCase):
         self.assertEqual(updated_account.email, account.email)
         self.assertEqual(updated_account.address, account.address)
         self.assertEqual(updated_account.phone_number, account.phone_number)
-        self.assertEqual(updated_account.date_joined, account.date_joined)  
+        self.assertEqual(updated_account.date_joined, account.date_joined)
 
     def test_update_account_not_found(self):
         """Update: It should return error status when no account could be found"""
@@ -189,3 +189,5 @@ class TestAccountService(TestCase):
             content_type="test/html"
         )
         self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+
+
