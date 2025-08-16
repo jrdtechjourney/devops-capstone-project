@@ -37,11 +37,11 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: postgresql
-                key: yM5nlYSlwYhcfBIH
+                key: pSaoeGMibFFvWCTk
           - name: DATABASE_USER
             valueFrom:
               secretKeyRef:
                 name: postgresql
-                key: userJM4
+                key: user8RP
 
 status: {}
